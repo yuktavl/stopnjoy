@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logo/stopnjoy_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Stop 'N' Joy Contact</title>
+    <!--Using-FontAwesome------>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+    <nav>
+
+    <!-------Menu-->
+   <a href="../index.html"><img src="../logo/stopnjoy_logo.png" alt="stopnjoy_logo"  width="200" height="50"></a>
+        <ul>
+            <li><a class="active" id="li" href="../index.html">Home</a></li>
+            <li><a class="active" id="li" href="./contact.html">Contact Us</a></li>
+        </ul>
+    	<!--bars----------->
+		<div class="toggle"></div>
+    </nav>
+
+    <!---contact---->
+    <span class=examp>
+	
+        <div class="container">
+            <div class="text"> Contact us </div>
+            <form action="https://formspree.io/f/xvodbdvv" method="POST" id="my-form">
+    
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" name="fname" required>
+                        <div class="underline"></div>
+                            <label for="">First Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" name="sname" required>
+                        <div class="underline"></div>
+                            <label for="">Last Name</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" name="email" required>
+                        <div class="underline"></div>
+                            <label for="">Email Address</label>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                    <input type="text" name="message" required>
+                    <div class="underline"></div>
+                    <label for="">Your message</label>
+                    <div class="input-data textarea"></div>
+                </div>
+                </div>
+                <br>
+                <button class="sub-btn">Submit</button>
+                </form>
+        </div>
+    </span> 
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="lower">
+                <!-------LeftBar------->
+                <div class="topic">Reach us</div>
+                <div class="email">
+                  <p><a href="https://www.google.co.in/maps/dir//Thirumenahalli+Main+Rd,+Agrahara+Badavane,+Bengaluru,+Karnataka+560064/@13.0889827,77.6341971,20.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae19968c485243:0xa60b8126c3f2a49c!2m2!1d77.6340657!2d13.0890216" target="_blank"><i class="fas fa-search-location"></i></a> 6th Cross, Near K.S.N.C. College <br>
+                    Thirumenhalli Village, Jakkur Post, <br> Bangalore - 560064
+                <div class="phone">
+                  <div class="topic">Click to call</div>
+                  <a href="tel:810589887"><i class="fas fa-phone-volume"></i>810589887  6364771244</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          <div class="middle box">
+        <!-------NavBar-->
+        <img src="../logo/delivery_logo.jpg" alt="stopnjoy_logo" width="200px" height="200px">
+        <h3>Within 1KM</h3>
+          </div>
+          <div class="right box">
+            <h4>Parcel: <br> Juice Items Rs.2/- <br> Other Items Rs.5/-</h4>
+          </div>
+        </div>
+        <div class="contact-dev">
+          <p>Contact Developer @ShahulShane</p>
+          <!--social------------>
+          <div class="social-icons">
+            <a href="https://twitter.com/ShahulShane" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/shahul.shane/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2021</p>
+        </div>
+      </footer>
+<!---JQuery-------->
+<script type="text/javascript" src="../js/JQuery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('nav').toggleClass('active')
+		})
+	})
+	</script>
+</body>
+</html>

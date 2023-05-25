@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo/stopnjoy_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stop 'N' Joy</title>
+    <!--Using-FontAwesome------>
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+<style>
+    body, html {height: 100%}
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+    .menu {display: none}
+    .bgimg {
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 90%;
+    }
+    </style>
+</head>
+<body>
+    <section>
+<!-------NavBar-->
+    <nav>
+    <a href="./index.html"><img src="./logo/stopnjoy_logo.png" alt="stopnjoy_logo"  width="200" height="50"></a>
+          <ul>
+              <li><a class="active" id="li" href="./index.html">Home</a></li>
+              <li><a class="active" id="li" href="./Assets/contact.html">Contact Us</a></li>
+          </ul>
+      <!-------Toggle Bar-->
+      <div class="toggle"></div>
+    </nav>
+<!-------MidBar-->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white  juice-tag" style="font-size:50px">Juice <br> BURGER & More</span>
+          <p><a href="#menu" class="let-me">Let me see the menu</a></p>
+        </div>
+      </header>
+    </section>
+      
+<!-- Menu Container -->
+  <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+      <div class="w3-content">
+      
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Fresh" onclick="openMenu(event, 'Fresh');" id="">
+            <div class="w3-col s8 tablink w3-padding-large  w3-border w3-hover-red"> Fresh Juice</div>
+          </a>
+          <a href="#Lassi" onclick="openMenu(event, 'Lassi');">
+            <div class="w3-col s4 tablink w3-padding-large w3-border w3-hover-red">Lassi</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Soda" onclick="openMenu(event, 'Soda');">
+            <div class="w3-col s4 tablink w3-padding-large w3-border w3-hover-red">Soda's</div>
+          </a>
+          <a href="#Milk_Shake" onclick="openMenu(event, 'Milk_Shake');">
+            <div class="w3-col s8 tablink w3-padding-large w3-border w3-hover-red">Milk Shake</div>
+          </a>
+        </div>  
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Ice_Cream_Shakes" onclick="openMenu(event, 'Ice_Cream_Shakes');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Ice Cream Shakes</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Crush_Shakes" onclick="openMenu(event, 'Crush_Shakes');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Crush Shakes</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Biscuit_Shakes" onclick="openMenu(event, 'Biscuit_Shakes');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Biscuit Shakes</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey"> 
+          <a href="#Crush_Shake_icecream" onclick="openMenu(event, 'Crush_Shake_icecream');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Crush Shakes With Ice Ceram</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Special_Shakes" onclick="openMenu(event, 'Special_Shakes');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Special Shakes</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">  
+          <a href="#Special_Chocolate_Shakes" onclick="openMenu(event, 'Special_Chocolate_Shakes');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Special Chocolate Shakes</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">  
+          <a href="#Dry_Fruit_Shakes" onclick="openMenu(event, 'Dry_Fruit_Shakes');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Dry Fruit Shakes</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Maggi" onclick="openMenu(event, 'Maggi');">
+            <div class="w3-col s4 tablink w3-padding-large w3-border w3-hover-red">Maggi</div>
+          </a>
+          <a href="#Snacks" onclick="openMenu(event, 'Snacks');">
+            <div class="w3-col s4 tablink w3-padding-large w3-border w3-hover-red">Snacks</div>
+          </a>
+          <a href="#Rolls" onclick="openMenu(event, 'Rolls');">
+            <div class="w3-col s4 tablink w3-padding-large w3-border w3-hover-red">Rolls</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Special_Ice_Cream" onclick="openMenu(event, 'Special_Ice_Cream');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Special Ice Cream</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Falafel" onclick="openMenu(event, 'Falafel');">
+            <div class="w3-col s6 tablink w3-padding-large w3-border w3-hover-red">Falafel</div>
+          </a>
+          <a href="#Burger" onclick="openMenu(event, 'Burger');">
+            <div class="w3-col s6 tablink w3-padding-large w3-border w3-hover-red">Burger</div>
+          </a>
+        </div>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <a href="#Sandwich" onclick="openMenu(event, 'Sandwich');">
+            <div class="w3-col s12 tablink w3-padding-large w3-border w3-hover-red">Sandwich</div>
+          </a>
+        </div>
+
+<!------------Menu List------->
+    <!-------Fresh Juice------->
+      <div id="Fresh" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Lime</b> <span class="w3-right w3-tag w3-dark-grey w3-round">20.00</span></h1>
+        <hr>
+     
+        <h1><b>Mint Lime</b> <span class="w3-right w3-tag w3-dark-grey w3-round">25.00</span></h1>
+        <hr>
+        
+        <h1><b>Ginger Lime</b> <span class="w3-right w3-tag w3-dark-grey w3-round">25.00</span></h1>
+        <hr>
+  
+        <h1><b>Mexican Lime</b> <span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+  
+        <h1><b>Blue Lime</b><span class="w3-right w3-tag w3-dark-grey w3-round">25.00</span></h1>
+        <hr>
+  
+        <h1><b>Musambi</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Orange</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Grape</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Pineapple</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Papaya</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Watermelon</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Muskmelon</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+      </div>
+    <!-------Lassi------->
+      <div id="Lassi" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Lassi</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Fruit Lassi</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Banana Lassi</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Strawberry Lassi</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Chocolate Lassi</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Mango Lassi</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        </div>
+  
+    <!-------Soda------->    
+      <div id="Soda" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Lime Soda</b><span class="w3-right w3-tag w3-dark-grey w3-round">25.00</span></h1>
+        <hr>
+        <h1><b>Ginger Lime Soda</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Mint Lime Soda</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+      </div>
+      
+    <!-------Milk Shake------->  
+      <div id="Milk_Shake" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Apple</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Chikku</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Butter Fruit</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Banana</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Anar</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Papaya</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Muskmelon</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Custured Apple</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Mango</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Mixed Fruit</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+      </div>
+
+    <!-------Ice Cream Shakes------->  
+      <div id="Ice_Cream_Shakes" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Vanilla</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Strawberry</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Chocolate</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Butter Scoth</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Black Currant</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+      </div>
+    
+    <!-------Crush Shakes------->  
+      <div id="Crush_Shakes" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Black Currant</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Green Apple</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Guava</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Litchi</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Kiwi</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Rose Milk</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+      </div>
+     
+    <!-------Crush Shakes With Ice Cream------->  
+      <div id="Crush_Shake_icecream" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Black Currant</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Green Apple</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Guava</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Litchi</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Mango</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Kiwi</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Rose Milk</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+      </div>
+
+    <!-------Biscuit Shakes------->  
+      <div id="Biscuit_Shakes" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Oreo</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Strawberry Oreo</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Oreo With Ice Cream</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Hide & Seek</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+      </div>
+    
+    <!-------Special Shakes------->  
+      <div id="Special_Shakes" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Cold Coffee</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Cold Boost</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Cold Horlicks</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Rose Shakes</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Sharja Shakes</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Pista Shakes</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Chocolate Shakes</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Kitkat Shakes</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Snikker Shakes</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Apple With Dates</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+      </div>
+      
+    <!-------Special Chocolate Shakes------->  
+      <div id="Special_Chocolate_Shakes" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Apple</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <p class="w3-text-grey">With Chocolate</p>
+        <hr>
+        <h1><b>Butter Fruit</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Chocolate</p>
+        <hr>
+        <h1><b>Mango</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <p class="w3-text-grey">With Chocolate</p>
+        <hr>
+        <h1><b>Banana</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <p class="w3-text-grey">With Chocolate</p>
+        <hr>
+        <h1><b>Chikku</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <p class="w3-text-grey">With Chocolate</p>
+        <hr>
+        <h1><b>Papaya</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <p class="w3-text-grey">With Chocolate</p>
+        <hr>
+      </div>
+    
+    <!-------Maggi------->  
+      <div id="Maggi" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Noodles</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Veg Noodles</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Egg Noodles</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Butter Noodles</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Cheese Noodles</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Cheese Noodles</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <p class="w3-text-grey">With Butter</p>
+        <hr>
+        <h1><b>Cheese Noodles</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Egg</p>
+        <hr>
+        <h1><b>Chicken Noodles</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+      </div>
+    
+    <!-------Snacks------->  
+      <div id="Snacks" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Samosa</b><span class="w3-right w3-tag w3-dark-grey w3-round">12.00</span></h1>
+        <hr>
+        <h1><b>Bun Samosa</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Spicy Bun Samosa</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Cheese Bun Samosa</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Bun Butter Samosa</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Bun Egg Samosa</b><span class="w3-right w3-tag w3-dark-grey w3-round">38.00</span></h1>
+        <hr>
+        <h1><b>Boiled Egg</b><span class="w3-right w3-tag w3-dark-grey w3-round">10.00</span></h1>
+        <hr>
+        <h1><b>Omlet</b><span class="w3-right w3-tag w3-dark-grey w3-round">25.00</span></h1>
+        <hr>
+        <h1><b>Omlet With Cheese</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Bread Omlet</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Bun Omlet</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Bun Omlet</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <p class="w3-text-grey">With Cheese</p>
+        <hr>
+        <h1><b>Cheese Bun</b><span class="w3-right w3-tag w3-dark-grey w3-round">--.--</span></h1>
+        <hr>
+        <h1><b>Mayo Bun</b><span class="w3-right w3-tag w3-dark-grey w3-round">15.00</span></h1>
+        <hr>
+        <h1><b>Bun Butter</b><span class="w3-right w3-tag w3-dark-grey w3-round">15.00</span></h1>
+        <hr>
+        <h1><b>Bun Loys</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>Vada Paav</b><span class="w3-right w3-tag w3-dark-grey w3-round">30.00</span></h1>
+        <hr>
+        <h1><b>French Fries</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+      </div>
+
+    <!-------Dry Fruit Shakes------->
+      <div id="Dry_Fruit_Shakes" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Badam</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Anjoor</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Dates</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Anjoor With Dates</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Badam With Dates</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Mixed Dry Fruits</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+      </div>
+
+    <!-------Special Ice Cream Shakes------->
+      <div id="Special_Ice_Cream" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Fruit Salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Fruit Salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Mango</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Butter Fruit</b><span class="w3-right w3-tag w3-dark-grey w3-round">55.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Chikku</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Badam</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Cold Coffee</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Banana</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Pista</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Kitkat</b><span class="w3-right w3-tag w3-dark-grey w3-round">55.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Snikker</b><span class="w3-right w3-tag w3-dark-grey w3-round">55.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Dates</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Apple</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+        <h1><b>Dry Fruits</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <p class="w3-text-grey">With Ice Cream</p>
+        <hr>
+      </div>
+
+    <!-------Rolls------->
+      <div id="Rolls" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Aloo Tikki Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Paneer Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Paneer Egg Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <hr>
+        <h1><b>Single Egg Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">35.00</span></h1>
+        <hr>
+        <h1><b>Double Egg Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Chicken Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Chicken Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <p class="w3-text-grey">With Egg</p>
+        <hr>
+        <h1><b>Double Chicken Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">75.00</span></h1>
+        <p class="w3-text-grey">With Double Egg</p>
+        <hr>
+      </div>
+
+    <!-------Falafel------->
+      <div id="Falafel" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">70.00</span></h1>
+        <hr>
+        <h1><b>Roll</b><span class="w3-right w3-tag w3-dark-grey w3-round">70.00</span></h1>
+        <hr>
+        <h1><b>Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">70.00</span></h1>
+        <hr>
+      </div>
+
+    <!-------Burger------->
+      <div id="Burger" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Veg Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Veg Butter Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Veg Cheese Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Veg Spicy Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Club Veg Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">70.00</span></h1>
+        <hr>
+        <h1><b>Paneer Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Paneer Butter Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">55.00</span></h1>
+        <hr>
+        <h1><b>Paneer Cheese Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <hr>
+        <h1><b>Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <p class="w3-text-grey">With Paneer Cheese Butter</p>
+        <hr>
+        <h1><b>Egg Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Egg Butter Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Egg Cheese Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">55.00</span></h1>
+        <hr>
+        <h1><b>Egg Spicy Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Chicken Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">55.00</span></h1>
+        <hr>
+        <h1><b>Chicken Butter Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <hr>
+        <h1><b>Chicken Cheese Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">65.00</span></h1>
+        <hr>
+        <h1><b>Chicken Spicy Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <hr>
+        <h1><b>Chicken Burger</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <p class="w3-text-grey">With Cutlet</p>
+        <hr>
+      </div>
+
+    <!-------Sandwich------->
+      <div id="Sandwich" class="w3-container menu w3-padding-32 w3-black">
+        <h1><b>Veg Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Veg Cheese Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Veg Butter Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">45.00</span></h1>
+        <hr>
+        <h1><b>Veg Spicy Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Veg Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Cutlet</p>
+        <hr>
+        <h1><b>Veg Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <p class="w3-text-grey">With Chilli Cheese</p>
+        <hr>
+        <h1><b>Paneer Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">55.00</span></h1>
+        <p class="w3-text-grey">With Paneer Butter</p>
+        <hr>
+        <h1><b>Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <p class="w3-text-grey">With Paneer Cheese</p>
+        <hr>
+        <h1><b>Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <p class="w3-text-grey">With Paneer Chilli Cheese</p>
+        <hr>
+        <h1><b>Sweet Corn Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">50.00</span></h1>
+        <hr>
+        <h1><b>Chocolate Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">40.00</span></h1>
+        <hr>
+        <h1><b>Chicken Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">55.00</span></h1>
+        <hr>
+        <h1><b>Chicken Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">65.00</span></h1>
+        <p class="w3-text-grey">With Cheese</p>
+        <hr>
+        <h1><b>Chicken Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">60.00</span></h1>
+        <p class="w3-text-grey">With Butter Sandwich</p>
+        <hr>
+        <h1><b>Chicken Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">70.00</span></h1>
+        <p class="w3-text-grey">With Butter Cheese</p>
+        <hr>
+        <h1><b>Chicken Sandwich</b><span class="w3-right w3-tag w3-dark-grey w3-round">70.00</span></h1>
+        <p class="w3-text-grey">With Chilli Cheese</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+<!-------Sidebar------->
+  <div class="side-bar">
+		<a href="#menu"><i class="fas fa-arrow-up"></i></a>
+	</div>
+
+<!-------Footer------->
+  <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="lower">
+    <!-------LeftBar------->
+          <div class="topic">Contact us</div>
+          <div class="email">
+            <p><a href="https://www.google.co.in/maps/dir//Thirumenahalli+Main+Rd,+Agrahara+Badavane,+Bengaluru,+Karnataka+560064/@13.0889827,77.6341971,20.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae19968c485243:0xa60b8126c3f2a49c!2m2!1d77.6340657!2d13.0890216" target="_blank"><i class="fas fa-search-location"></i></a> 6th Cross, Near K.S.N.C. College <br>
+              Thirumenhalli Village, Jakkur Post, <br> Bangalore - 560064
+          <div class="phone">
+            <div class="topic">Click to call</div>
+            <a href="tel:810589887"><i class="fas fa-phone-volume"></i>810589887  6364771244</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <!-------MidBar-->
+      <div class="middle box">
+        <img src="./logo/delivery_logo.jpg" alt="stopnjoy_logo" width="200px" height="200px">
+          <h3>Within 1KM</h3>
+      </div>
+    
+    <!-------RightBar-->      
+      <div class="right box">
+        <h5>Parcel: <br> Juice Items Rs.2/- <br> Other Items Rs.5/-</h5>
+      </div>
+    </div>
+    
+    <div class="contact-dev">
+      <p>Contact Developer @ShahulShane</p>
+      <!--social------------>
+      <div class="social-icons">
+        <a href="https://twitter.com/ShahulShane" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/shahul.shane/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Copyright © 2021</p>
+    </div>
+  </footer>
+  
+<!-------JavaScript-->  
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-red";
+    }
+
+</script>
+
+<!-----JavaScript-->
+<script type="text/javascript" src="./js/JQuery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('nav').toggleClass('active')
+		})
+	})
+	</script>
+</body>
+</html>
